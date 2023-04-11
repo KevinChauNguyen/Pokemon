@@ -1,0 +1,23 @@
+.card{
+    width: 400px;
+    background-color:#35c2aa;
+    border-radius: 3rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+  }
+  .container{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}

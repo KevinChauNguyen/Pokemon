@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Using the PokeAPI, return a page with the first 20 Pokemon that displays on the API with the following information: Pokemon name, Pokemon URL, with a button for the user to click on to see the individual page for that Pokemon that includes the following information: Name, Image (using the front_default sprites), moves, abilities, and weight. You can use vanilla JS or React whatever framework you are comfortable with. You should apply some styling, so we can look at how you write your CSS, but don’t worry about making the design anything super fancy. 
+
