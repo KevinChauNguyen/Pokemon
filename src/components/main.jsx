@@ -3,10 +3,11 @@ import Card from './card';
 import {useState} from "react";
 import {useEffect} from "react";
 import axios from "axios";
-
+import PokemonDetails from './PokemonDetails';
 const Main = () => {
   const [pokemonData, setPokemonData] = useState([]);
-  const [PokedexInfo, setPokedexInfo] = useState([]);
+  const [pokeDex, setPokeDex] = useState([]);
+  
 
   useEffect(() => {
     axios

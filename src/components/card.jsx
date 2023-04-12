@@ -1,7 +1,8 @@
 import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
-const Card = (pokemon,) => {
+import PokemonDetails from './PokemonDetails';
+const Card = (pokemon) => {
   return (
     <div>
         <div className="card">
@@ -11,6 +12,7 @@ const Card = (pokemon,) => {
             <Link to={`/pokemon/${pokemon.id}`}>
                 <button>View Details</button>
             </Link>
+              
         </div>
     </div>
   );
