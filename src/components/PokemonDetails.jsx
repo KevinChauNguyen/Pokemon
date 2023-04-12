@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const PokemonDetails = () => {
   const { id } = useParams(); // Get the id parameter from the URL
@@ -39,6 +40,9 @@ const PokemonDetails = () => {
       </ul>
       <h2>Weight:</h2>
       <p>{pokemon.weight}</p>
+      <Link to = "/">
+        <button>Return to Pokedex</button>
+      </Link>
     </div>
   );
 };
