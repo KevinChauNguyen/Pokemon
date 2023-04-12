@@ -6,6 +6,7 @@ import axios from "axios";
 
 const Main = () => {
   const [pokemonData, setPokemonData] = useState([]);
+  const [PokedexInfo, setPokedexInfo] = useState([]);
 
   useEffect(() => {
     axios
@@ -20,15 +21,18 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="container">
-      {pokemonData.map((pokemon, index) => (
-        <Card
-          key={index}
-          id={index + 1}
-          name={pokemon.name}
-          image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`}
-        />
-      ))}
+    <div > 
+        <h1>The POKEDEX</h1>
+        <div className = "card-container">
+        {pokemonData.map((pokemon, index) => (
+            <Card
+            key={index}
+            id={index + 1}
+            name={pokemon.name}
+            image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`}
+            />
+        ))}
+        </div>
     </div>
   );
 };

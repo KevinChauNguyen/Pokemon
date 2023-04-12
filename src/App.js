@@ -1,14 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 import Main from './components/main';
-import  './components/style.css';
+
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
-    <>
-    <Main/>
-    
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
+
