@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
-import PokemonDetails from './PokemonDetails';
 const Card = (pokemon) => {
   return (
     <div>
