@@ -23,21 +23,21 @@ const PokemonDetails = () => {
   }
 
   return (
-    <div>
+    <div className= "pokeDetails">
       <h1>{pokemon.name}</h1>
-      <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+      <img src={pokemon.sprites.front_default} alt={pokemon.name} className = "pokeImg"/>
       <h2>Moves:</h2>
-      <ul>
-        {pokemon.moves.map((move) => (
-          <li key={move.move.name}>{move.move.name}</li>
+      <p>
+        {pokemon.moves.map((pokemon) => (
+          <p>{pokemon.move.name}</p>
         ))}
-      </ul>
+      </p>
       <h2>Abilities:</h2>
-      <ul>
-        {pokemon.abilities.map((ability) => (
-          <li key={ability.ability.name}>{ability.ability.name}</li>
+      <p>
+        {pokemon.abilities.map((pokemon) => (
+          <p>{pokemon.ability.name}</p>
         ))}
-      </ul>
+      </p>
       <h2>Weight:</h2>
       <p>{pokemon.weight}</p>
       <Link to = "/">

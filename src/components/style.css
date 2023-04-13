@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&display=swap');
 .card{
     width: 400px;
     background-color:#35c2aa;
@@ -17,15 +17,28 @@
     justify-items: center;
   }
   .container{
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding-top: 100px;
     display: flex;
 }
 h1 {
-    width: 90%;
+    width: 100%;
     text-align: center;
-    font-family:'Pokemon Solid', sans-serif;
+    font-family: 'Anuphan', sans-serif;
     font-size:50px;
-    color:#a4b325;
+
+}
+.pokeDetails {
+    text-align: center;
+}
+.pokeImg  {
+    width: 10%;
+}
+p {
+    font-weight: normal;
+    font-family: 'Anuphan', sans-serif;
+}
+body {
+    background-color: #d5ebcb;;
 }
