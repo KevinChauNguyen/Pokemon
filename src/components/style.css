@@ -42,3 +42,14 @@ p {
 body {
     background-color: #d5ebcb;;
 }
+
+button {
+    background-color: #e3f0ee;
+    transition-duration: 0.4s;
+    border-radius: 1rem;
+    
+    
+}
+button:hover {
+    background-color:#35c2aa; /* Green */
+}
